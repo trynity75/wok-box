@@ -1,0 +1,375 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background-color: #080202;
+  font-family: "Poppins", sans-serif;
+}
+
+/* wasss */
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #0A0202;
+}
+
+.header__img img {
+  width: 80px;
+
+}
+
+li {
+  list-style: none;
+}
+
+a{ text-decoration: none;}
+
+.header__lis_container{
+  padding: 0px 7%;
+  width: 100%;
+  height: 100%;
+}
+
+.lis__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items:end;
+}
+
+.lis__header a {
+  
+
+  font-size: 130%;
+  color: rgb(255, 255, 255);
+}
+
+.lis__header a:hover {
+  color: rgb(255, 0, 0);
+  font-size: 130%;
+
+}
+
+/* section one */
+#informacion {
+  height: 500px;
+  padding: 50px 9%;
+  display: flex;
+  background-color: #0A0202;
+  justify-content:end;
+
+
+}
+
+.welcome {
+  width: 100%;
+}
+
+.welcome h1{
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.welcome p{
+  font-size: 150%;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: white;
+}
+
+.welcome p a{
+  color: red;
+}
+
+
+
+#logo img{
+  width:40vh;
+}
+
+@media (min-width: 900px){
+  .welcome h1{
+      font-size: 40px;
+  }
+  
+  .welcome p{
+      font-size: 30px;
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      color: white;
+  }
+
+}
+/* wasss */
+
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.swiper-button-prev ::after{
+  font-size: 25px;
+}
+
+.swiper-button-next ::after{
+  font-size: 25px;
+}
+
+.swiper-button-next {
+  color:red ;
+}
+
+.swiper-button-prev {
+  color: red;
+}
+
+.swiper-pagination-bullet {
+  background-color: grey;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: red;
+}
+
+.menu {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+}
+
+.menu-1 {
+  margin-right: 180px;
+  margin-top: 15px;
+}
+
+.menu-2 {
+  margin-left: 180px;
+  display: flex;
+  align-items: center;
+}
+
+.logo-1 {
+  width: 0;
+}
+.logo-2 {
+  width: 150px;
+}
+
+.socials {
+  display: flex;
+}
+
+.social {
+  margin: 0 10px;
+  height: 33px;
+  width: 33px;
+  border: 1px solid red;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.social:hover {
+  background-color: red;
+}
+
+.social img {
+    width: 12px;
+  margin: 8px 0 0 10px;
+}
+
+.menu .navbar ul li {
+  position: relative;
+  float: left;
+}
+
+.menu .navbar ul li a {
+  font-size: 18px;
+  padding: 20px;
+  color: white;
+  display:  block;
+}
+
+.menu .navbar ul li a:hover {
+  color: red;
+}
+
+#menu {
+  display: none;
+}
+.menu-icono {
+  width: 25px;
+}
+
+.menu label {
+  cursor: pointer;
+  display: none;
+}
+
+.header-content {
+  margin-top: 200px;
+  padding-bottom: 50px;
+}
+
+.slider {
+  display: flex;
+  align-items: center;
+}
+
+.slider-txt {
+  margin-left: 85px;
+  width: 50%;
+}
+.slider-txt h1 {
+  font-size: 70px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.slider-txt p {
+  font-size: 18px;
+  color: #a7a7a7;
+}
+
+.botones {
+  margin-top: 50px;
+}
+
+.btn-1 {
+  display: inline-block;
+  padding: 15px 35px;
+  border:  2px solid red;
+  color: white ;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-right: 20px;
+  border-radius: 50px;
+}
+
+.btn-1:hover {
+  background-color: red;
+
+}
+
+.slider-img {
+  width: 50%;
+}
+.slider-img img {
+  margin-right: 225px;
+  width: 550px;
+}
+
+.products {
+  background-color: #0d0d0d;
+}
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 100px 0px;
+}
+
+.tabs label {
+  width: 15%;
+  order:  1;
+  display:  block;
+  padding: 20px 0;
+  text-align: center;
+  cursor: pointer;
+  color: #a7a7a7;
+  font-weight: 700;
+  transition: background ease 0.2s;
+}
+
+.tabs .tab {
+  order: 99;
+  flex-grow: 1;
+  width: 100%;
+  display: none;
+  padding-top: 25px;
+}
+
+.tabs input[type="radio"] {
+  display: none;
+}
+
+.tabs input[type="radio"] :checked + label {
+  border: 2px solid red;
+  color: rgb(253, 0, 0);
+
+}
+
+/* section one */
+
+#informacion {
+    height: 700px;
+    padding: 50px 9%;
+    display: flex;
+    background-color: #0A0202;
+    justify-content:end;
+
+
+}
+
+#container {
+    width: 100%;
+    border: 4px dashed  #ff0000;
+    border-radius: 20px;
+    background: #ffffff;
+}
+
+.container_platos {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    height: 100vh;
+    overflow: auto;
+    flex-direction: row;
+    
+}
+
+article {
+    width: 130px;
+    margin: 7%;
+}
+img {
+    width: 100px;
+}
+b {
+    font-size: 12px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer button {
+    width: 30px;
+    font-size: 120%;
+    border-radius: 100px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+.footer button p{
+    color: white;
+}
